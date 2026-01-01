@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Establece el set de caracteres a UTF-8 -->
-    <meta charset="UTF-8">
-    <!-- Configuración inicial para la responsividad -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Titulo de la pagina -->
-    <title>Google Clone</title>
-    <!-- Iconos de google -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Importar la hoja de estilos -->
-    <link href="styles.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Google Clone</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <!-- Tu código HTML va aquí -->
-    <!-- Importar el script -->
-    <script src="script.js"></script>
+  <div class="container">
+    <img
+      src="https://media.tenor.com/odR79W_0u3gAAAAC/merry-christmas-google-holidays2018.gif"
+      alt="Google Navidad"
+      class="logo"
+    />
+
+    <form id="searchForm">
+      <div class="search-box">
+        <span class="icon left" aria-hidden="true">🔍</span>
+        <input type="text" id="searchInput" placeholder="Escribe tu búsqueda aquí..." />
+        <span class="icon right" aria-hidden="true">🎤</span>
+      </div>
+
+      <div class="buttons">
+        <button type="submit">Buscar con Google</button>
+        <button type="submit">Me siento con suerte</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
