@@ -14,16 +14,16 @@
       class="logo"
     />
 
-    <form id="searchForm">
+    <form id="searchForm" action="#" method="GET">
       <div class="search-box">
-        <span class="icon left" aria-hidden="true">🔍</span>
+        <span class="icon left" aria-hidden="true" title="Buscar">🔍</span>
         <input type="text" id="searchInput" placeholder="Escribe tu búsqueda aquí..." />
-        <span class="icon right" aria-hidden="true">🎤</span>
+        <span class="icon right" aria-hidden="true" title="Micrófono">🎤</span>
       </div>
 
       <div class="buttons">
         <button type="submit">Buscar con Google</button>
-        <button type="submit">Me siento con suerte</button>
+        <button type="button" id="luckyBtn">Me siento con suerte</button>
       </div>
     </form>
   </div>

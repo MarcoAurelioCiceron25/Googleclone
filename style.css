@@ -1,9 +1,6 @@
 /* Layout base centrado */
 html, body {
   height: 100%;
-}
-
-body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #fff;
@@ -16,53 +13,44 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;   /* centra horizontalmente */
-  justify-content: center; /* centra verticalmente dentro del body */
+  align-items: center;          /* centra horizontalmente */
+  justify-content: center;      /* centra verticalmente dentro del body */
   width: 100%;
   max-width: 600px;
   text-align: center;
   padding: 0 16px;
 }
 
-
 /* Logo */
 .logo {
   display: block;
-  width:500px;                 /*tamaño de la ventana*/
-  margin: 0 auto 20px auto;     /* Centrado y separación inferior */
+  width: 400px;                 /* tamaño más grande */
+  margin: 0 auto 28px auto;     /* Centrado y separación inferior */
 }
 
-
-/* Barra de búsqueda normal */
-
-
-/* Efecto al pasar el cursor */
-.search-box input[type="text"]:hover {
-  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
-  border-color: transparent;
-}
-
-/* Efecto al hacer clic (focus) */
-.search-box input[type="text"]:focus {
-  outline: none;
-  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
-  border-color: transparent;
-}
-
+/* Barra de búsqueda */
 .search-box {
   position: relative;
+  width: 400%;
+  max-width: 400px;             /* mismo ancho que el logo */
+  margin: 0 auto;               /* centra el contenedor */
 }
 
 .search-box input[type="text"] {
-  width: 80%;
+  width: 100%;
+  max-width: 400;
+  margin-left: -80px;
   height: 44px;
   padding: 0 44px;              /* Espacio para iconos a ambos lados */
   border: 1px solid #dfe1e5;
   border-radius: 24px;
   box-shadow: none;
   font-size: 16px;
+  transition: all 0.2s ease-in-out;
 }
 
+/* Efectos hover y focus */
+.search-box input[type="text"]:hover,
 .search-box input[type="text"]:focus {
   outline: none;
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
@@ -78,8 +66,8 @@ body {
   font-size: 18px;
 }
 
-.icon.left { left: 14px; }
-.icon.right { right: 14px; }
+.icon.left { left: -70px; }
+.icon.right { right: 10px; }
 
 /* Botones */
 .buttons {
@@ -95,6 +83,7 @@ body {
   padding: 10px 16px;
   margin: 6px 4px;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .buttons button:hover {
