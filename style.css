@@ -14,11 +14,16 @@ body {
 
 /* Contenedor principal */
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centra horizontalmente */
+  justify-content: center; /* centra verticalmente dentro del body */
   width: 100%;
   max-width: 600px;
   text-align: center;
   padding: 0 16px;
 }
+
 
 /* Logo */
 .logo {
