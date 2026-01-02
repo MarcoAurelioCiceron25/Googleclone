@@ -23,21 +23,13 @@ body {
 /* Logo */
 .logo {
   display: block;
-  width:300 px;                 /*tamaño de la ventana*/
-  margin: 0 auto 28px auto;     /* Centrado y separación inferior */
+  width:500px;                 /*tamaño de la ventana*/
+  margin: 0 auto 20px auto;     /* Centrado y separación inferior */
 }
 
-/* Caja de búsqueda */
+
 /* Barra de búsqueda normal */
-.search-box input[type="text"] {
-  width: 100%;
-  height: 44px;
-  padding: 0 44px;
-  border: 1px solid #dfe1e5;
-  border-radius: 24px;
-  font-size: 16px;
-  transition: all 0.2s ease-in-out; /* animación suave */
-}
+
 
 /* Efecto al pasar el cursor */
 .search-box input[type="text"]:hover {
@@ -57,7 +49,7 @@ body {
 }
 
 .search-box input[type="text"] {
-  width: 100%;
+  width: 80%;
   height: 44px;
   padding: 0 44px;              /* Espacio para iconos a ambos lados */
   border: 1px solid #dfe1e5;
