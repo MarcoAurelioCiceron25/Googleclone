@@ -13,8 +13,8 @@ html, body {
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;          /* centra horizontalmente */
-  justify-content: center;      /* centra verticalmente dentro del body */
+  align-items: center;          /* centramos horizontalmente */
+  justify-content: center;      /* centramos verticalmente dentro del body */
   width: 100%;
   max-width: 600px;
   text-align: center;
@@ -24,7 +24,7 @@ html, body {
 /* Logo */
 .logo {
   display: block;
-  width: 400px;                 /* tamaño más grande */
+  width: 400px;                 
   margin: 0 auto 28px auto;     /* Centrado y separación inferior */
 }
 
@@ -32,8 +32,8 @@ html, body {
 .search-box {
   position: relative;
   width: 400%;
-  max-width: 400px;             /* mismo ancho que el logo */
-  margin: 0 auto;               /* centra el contenedor */
+  max-width: 400px;             /* usamos el mismo ancho que el logo */
+  margin: 0 auto;               /* centramos el contenedor */
 }
 
 .search-box input[type="text"] {
@@ -41,7 +41,7 @@ html, body {
   max-width: 400;
   margin-left: -80px;
   height: 44px;
-  padding: 0 44px;              /* Espacio para iconos a ambos lados */
+  padding: 0 44px;              /* Aquí hacemos espacio para los iconos en ambos lados */
   border: 1px solid #dfe1e5;
   border-radius: 24px;
   box-shadow: none;
